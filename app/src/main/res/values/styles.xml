@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_layer</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlActivated">@color/lightPrimary</item>
+        <item name="android:textColorHint">@color/lightPrimary</item>
+        <item name="colorControlNormal">@color/lightPrimary</item>
+    </style>
+
+    <style name="AppTheme.Button">
+        <item name="android:paddingTop">@dimen/element_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/element_vertical_padding</item>
+        <item name="android:paddingLeft">@dimen/element_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/element_horizontal_padding</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:textColor">@color/lightPrimary</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppTheme.Button.Accent" parent="AppTheme.Button">
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="Base.Widget.AppCompat.ProgressBar">
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorAccent">@color/lightPrimary</item>
+        <item name="android:progressDrawable">@drawable/progress_layer</item>
+    </style>
+
+    <style name="AppTheme.TextView">
+        <item name="android:padding">@dimen/textview_padding_default</item>
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <style name="AppTheme.TextView.Title" parent="AppTheme.TextView">
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.TextView.Description" parent="AppTheme.TextView">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:textColor">@color/secondaryText</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/base_white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+</resources>
